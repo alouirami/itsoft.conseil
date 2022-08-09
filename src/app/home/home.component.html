@@ -1,0 +1,287 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Portfolio Template">
+    <meta name="author" content="Suvrat Jain">
+    <title>Responsive Bootstrap Template for Portfolio</title>
+    <!-- Bootstrap core CSS -->
+	
+    
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button> 
+          <a class="navbar-brand" routerLink=""><img [src]="itsftc" style="display: block; width: 80px; height: 90px;"></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a onClick="history.go(0)">Accueil</a></li>
+            <li><a routerLink="juridique">Juridique</a></li>
+            <li><a routerLink="comptabilite">Comptabilité</a></li>
+            <li><a routerLink="ressource-humaine">Ressources humaines</a></li>
+            <li><a routerLink="contact">Contact</a></li>
+          </ul> 
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+	<div class="container-fluid splash" id="splash">
+		<div class="container">
+		  <img [src]="image1" style="display: block; width: 940px; height: 720px; margin: -0px 0px 0px 303px;"> 
+		  <div style="position:relative;bottom: 380px; right:430px; color:#0000;"><h5>ITSOFT CONSEIL</h5></div>
+		  <div style="position:relative;bottom: 390px; right:150px;"><h4>La premiére priorité est de satisfaire nos clients</h4></div>
+		  <div style="position:relative;bottom: 370px; right:150px; width: 420px;"><h4>
+			  Le Cabinet ITSoft conseil est une société de conseil, de formalités et de gestion d’entreprises, implantée à Montreuil dans la région parisienne.</h4></div>
+		  <span class="continue"><a href="#about"><i class="fa fa-angle-down"></i></a></span>
+		</div>
+	  </div>
+	  <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div style="position:relative;bottom: 56px; right:262px;color:#006EBA;font-weight: bold;
+				font-size: 50px;background-color: white; 
+				display: inline;
+				float: left;">
+                    <p>Qui sommes-nous?</p>
+                </div>
+				
+            </div>
+            <div class="row">
+                <div style="position:relative;bottom: -40.5px; right:-100px;background-color: white; width: 420px;">
+					<h1 style="font-weight: bold;
+					font-size: 30px;color:#006EBA">ITSoft conseil</h1>
+                    <p style="color:black;font-size: 18px;">regroupe plusieurs collaborateurs, entourés d’une équipe pluridisciplinaire de professionnels qui sont à votre écoute pour vous conseiller, construire, développer en matière de gestion comptable, fiscale, financière, et sociale. 
+						Notre société intervient dans tous les secteurs d’activité : artisanat, commerce, services, industrie, professions libérales, associations.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+	    <div class="container-fluid portfolio-container-holder content-section" id="portfolio">
+		<div class="portfolio-container container">
+			
+      
+			<div class="row">
+				
+				
+				
+				
+				<div style="position:relative; bottom: 77px; right:-520px;background-color: #006EBA; width: 420px;">
+					<h1 style="font-weight: bold;
+					font-size: 30px;color:white">Nos missions</h1>
+                    <p style="color:white;font-size: 18px;">La gestion, spécialiste pluridisciplinaire, dispose de compétences étendues pour vous suivre et vous conseiller durant toute la vie de votre entreprise.
+                    </p>
+                </div>
+				<div style="position:relative;bottom: 56px; right:100px;color:#006EBA;font-weight: bold;
+				font-size: 50px; 
+				display: inline;
+				float: left;">
+                    <p>Nos Services</p>
+                </div>
+			
+				
+			</div>
+			
+				
+		</div>
+		<div class="container-fluid portfolio-container-holder content-section" id="portfolio">
+		
+			<div style="position:relative;bottom: 50px; ">
+				<img style="  margin-left:50px;  width: 108px;
+				height: 105px;"[src]="equilibre"> 
+				<h1>Juridique</h1>
+				<p style="width: 165px;">Création d'entreprise
+				  Modifications juridiques et dissolution Liquidation</p> 
+				  
+			  </div>
+			  <div style="position: relative;
+			  top: -295px; text-align: center; ">
+				<img style="   margin-left:100px; width: 108px;
+				height: 105px; text-align : center;"[src]="contabilite"> 
+				<h1>Service-Comptabilité
+				</h1>
+				<p style="width: 165px;margin-left: auto;
+				margin-right: auto;">Gestion Sociale
+					<br>
+					Gestion bancaire<br>
+					Télédéclaration</p> 
+				  
+			  </div>
+			  <div style="position: relative;
+			  top: -540px; text-align: right;">
+				<img style="   margin-right:100px; width: 108px;
+				height: 105px; text-align : center;"[src]="travail"> 
+				<h1>Conseil et formation
+				</h1>
+				<p style="width: 165px;
+				margin-left: 1250px;">Assistance aux contrôles
+					<br>
+					Montage de financement<br>
+					Formation des dirigeants</p> 
+				  
+			  </div>
+			  <div style="position: relative;
+			  top: -450px; text-align: center;"><a routerLink="/contact" style="border-radius: 0px; background-color: #006EBA;" class="btn btn-primary btn-lg">
+				<i class="fa fa-envelope"></i> Contactez-nous
+			</a></div>
+		</div>
+		  
+	</div>
+	<section style="background-color: #cdcdcd;padding-bottom: 100px;"  id="about">
+        <div class="container">
+            <div class="row">
+                <div style="position:relative;bottom: 56px; right:262px;color:#006EBA;font-weight: bold;
+				font-size: 50px;background-color: white; 
+				display: inline;
+				float: left; z-index: 1;box-shadow: 10px -10px 0px 10px #006EBA">
+                    <p>L'équipe</p>
+                </div>
+				
+            </div>
+			
+            <div class="row">
+				
+				<div style="position:relative; bottom: 85px; right:-838px;background-color: #006EBA; width: 420px;">
+					<h1 style="font-weight: bold;
+					font-size: 30px;color:white">Notre équipe</h1>
+                    <p style="color:white;font-size: 18px;">
+						Notre équipe
+						ITSoft Conseil regroupe plusieurs collaborateurs, entourés d’une équipe pluridisciplinaire de professionnels qui sont à votre écoute pour vous conseiller, construire, développer en matière de gestion comptable, fiscale, financière, et sociale.
+						Notre société intervient dans tous les secteurs d’activité : artisanat, commerce, services, industrie, professions libérales, associations.
+                    </p>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+	<div class="container-fluid portfolio-container-holder content-section" id="portfolio">
+		<div class="portfolio-container container">
+			
+      
+			<div class="row">
+				
+				
+				
+				<div style="position:relative;bottom: 270px;
+				right:-838px;background-color: white; width: 420px;">
+					<h1 style="font-weight: bold;
+					font-size: 30px;color:#006EBA">Notre Philosophie</h1>
+                    <p style="color:black;font-size: 18px;">
+						<b>Qualité:</b> Notre priorité absolue est de fournir des services de la plus haute qualité.<br>
+
+<b>Efficacité:</b> Nous sommes fiers de l’efficacité de nos méthodes et de nos solutions.<br>
+
+<b>Des prix équitables:</b> Notre première priorité est de satisfaire nos clients.
+                    </p>
+                </div>
+				
+				
+			
+				
+			</div>
+			
+				
+		</div>
+		
+	</div>
+	<img style="  position: relative;    width: 550px;
+    height: 480px;
+    bottom: 784px;"[src]="image3">
+	<div class="container-fluid  content-section" id="contact">
+		<div class="container">
+			<h1 class="intro-text text-center" >Contactez-nous
+			</h1>
+			<p style="color:gray;"><img style="    width: 60px;
+				height: 70px;"[src]="lieux">
+				4, RUE LENEVEUX 75014 PARIS, France</p>
+				<p style="position: relative;
+			bottom: 79.5px; text-align: center; color:gray;"><img style="  margin-left:50px;  width: 60px;
+				height: 70px;"[src]="telephone">
+				tel:09 73 89 42 37 , fax:09 73 89 52 37</p>
+				<p style="position: relative;
+			bottom: 157.5px; text-align: right; color:gray;"><img style="  margin-left:50px;  width: 60px;
+				height: 70px;"[src]="avion">
+				contact@itsoftconseil.net</p>
+				<div class="row">
+					<h1 style="font-weight: bold; font-size: 30px; color: #006EBA;">Souhaitez-vous nous contacter ?</h1>
+					<div class="col-sm-4 col-md-4">
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-addon"><i class="fa fa-user"></i></div>
+								<input type="text" class="form-control" id="name" placeholder="Prénom">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-addon"><i class="fa fa-user"></i></div>
+								<input type="text" class="form-control" id="prenom" placeholder="Nom de famille">
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<div class="input-group">
+				  <div class="input-group-addon"><i class="fa fa-at"></i></div>
+								<input type="text" class="form-control" id="email" placeholder="E-mail">
+							</div>
+						</div>
+	
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-addon"><i class="fa fa-phone"></i></div>
+								<input type="text" class="form-control" id="phone" placeholder="Téléphone">
+							</div>
+						</div>
+					</div>
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+					<div class="col-sm-4">
+						<textarea class="form-control" rows="5" placeholder="Rédigez votre message ici..."></textarea>
+						<div class="text-center">
+							<button style="border-radius: 0px; background-color: #006EBA; color:white;"class="btn btn-default submit-button btn-lg btn-primary"><i class="fa fa-paper-plane"></i> Envoyer</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p style=" position: relative; text-align: right;
+		bottom: 420px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.638019183719!2d2.3258853156385384!3d48.82696767928452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671b02d5a0263%3A0xd868369d0d57bca1!2s4%20Rue%20Leneveux%2C%2075014%20Paris%2C%20France!5e0!3m2!1sfr!2ses!4v1659621784998!5m2!1sfr!2ses" width="600" height="450" style="border:0;border:2px solid gray;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</p></div>
+<!-- Footer -->
+	<footer>
+		<div class="container footer-container">
+			<div class="row footer-row">
+				
+<p style="color:white; text-align: left;">
+	<img style="width: 360px;height: 160px;"[src]="logo">
+</p>
+<p style="text-align: left; position:relative; left:370px; bottom:146px; color: white; width: 280px; ">
+	ITSoft Conseil<br>
+	Domiciliation-Juridique-Comptabilité-Gestion RH-Création Sites web-Créagion de sigles-Création de cartes visite et Formulaires
+</p>
+<p style="font-size:18px;text-align: left; position:relative; left:770px; bottom:335px; color: white; width: 280px; ">
+	Siège social: 4, RUE LENEVEUX 75014 PARIS - France Tel: +33 9 73 89 42 37 Fax: +33 9 73 89 52 37
+	R.S: ITSOFTCONSEIL
+	SIRET:53454442400037
+</p>
+			</div>
+		</div>
+	</footer>
+
+  </body>
+
